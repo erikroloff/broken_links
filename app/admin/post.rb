@@ -1,4 +1,5 @@
 ActiveAdmin.register Post do
+  permit_params :link, :post_information
 
 
   # See permitted parameters documentation:
