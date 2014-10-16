@@ -8,7 +8,9 @@
       <dt class="label label-default"><%= model_class.human_attribute_name(:title) %></dt>
       <dd><pre class="prettyprint"><%= @post.title %></pre></dd>
       <dt class="label label-default"><%= model_class.human_attribute_name(:link) %></dt>
-      <dd><pre class="prettyprint"><%= @post.link %></pre></dd>
+      <dd><pre class="prettyprint"><%= link_to @post.link, @post.link %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:user) %></dt>
+      <dd><pre class="prettyprint"><%= @post.user.email %></pre></dd>
       <dt class="label label-default"><%= model_class.human_attribute_name(:post_information) %></dt>
       <dd><pre class="prettyprint"><%= @post.post_information %></pre></dd>
   </dl>
