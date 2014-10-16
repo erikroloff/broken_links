@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>ID</th>
+      <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:link) %></th>
       <th><%= model_class.human_attribute_name(:post_information) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
@@ -16,6 +17,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.id %></td>
+        <td><%= post.title %></td>
         <td><%= link_to post.link, post.link %></td>
         <td><%= post.post_information %></td>
         <td><%=l post.created_at, format: :long %></td>
